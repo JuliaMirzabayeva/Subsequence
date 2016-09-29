@@ -33,13 +33,8 @@ public class SubsequenceComparator
         }
         else
         {
-            for(Map.Entry<Object,Integer> pair: yMap.entrySet())
-            {
-                Object key = pair.getKey();
-                int value = pair.getValue();
-                if(!xMap.containsKey(key) || xMap.get(key) < value)
-                    return false;
-            }
+            System.out.println("Размер первой последовательности больше размера второй.");
+            return false;
         }
         return true;
     }
